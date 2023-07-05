@@ -1,0 +1,110 @@
+body {
+  font-family: 'Courier New', monospace;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: center;
+  margin: auto;
+}
+
+span {
+  color: red;
+}
+
+.photoSCW {
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+  float: left;
+  margin-right: 2rem;
+}
+
+.photoSCW img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border: 3px solid #ffffff00;
+  border-radius: 2px;
+  padding: 4px;
+}
+
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgb(255, 2, 2);
+}
+
+.msg {
+  margin-left: auto;
+  margin-right: 14rem;
+  padding-top: 70px;
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+  max-width: 520px;
+  height: 220px;
+}
+
+.msg .submit {
+  vertical-align: middle;
+  margin-top: 1rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 0.5em 3em;
+  color: #000000;
+  font-family: 'Muli', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button.submit {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 6px 3px;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #ff0000;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: row;
+  }
+
+  .photoSCW {
+    max-width: 250%;
+    margin-left: 5rem;
+  }
+
+  .msg {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15rem;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1px;
+  color: black;
+  margin-top: 19rem;
+}
